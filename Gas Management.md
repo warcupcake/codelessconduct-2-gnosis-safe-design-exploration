@@ -1,6 +1,6 @@
 # Gnosis Safe: Gas Management
 
-Currently, as part of the User Experience on Gnosis safe, the cost of transaction is gas can be managed only at execution of the contract at the last user of the M of N approval.
+Currently, as part of the User Experience on Gnosis safe, the cost of transaction in gas can be managed only at execution of the contract at the last user of the M of N approval.
 In performing a transaction or smart contract contract interaction, the process is currently as follows:
   
   1. A user initiates the transaction/contract interaction.

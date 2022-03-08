@@ -21,14 +21,14 @@ The initiator is from a client-facing team that takes in the clients' transactio
 The approver of the confirmation in the middle is from the management team who is constantly movign from one meeting to another with only a smartphone to confirm transactions.
 Lastly, the last confirmation and executor of the transaction is from the accounting or finance team who require to make decisions on gas fees and record the relevant expenses.
 
-# Solution: Configurable User Roles
+# Solution: User Roles
 
 An effective way to handle roles and assigned tasks is to create a configurable role and task matrix. Inspired by the roles and rights of regulated custodians, configurable user matrices can allow for Users to be able to apply and enforce their own business requirements under pre-defined constraints that is specific for Gnosis Safe.
 
 The idea here is to allow Users to be able to generate roles and allow each role specific tasks during a transaction. The main tasks that would require assignment to a User Role includes:
 
 - Transaction Initiation
-- Transaction Confirmation
+- Transaction Approval/Confirmation
 - Transaction Execution
 
 With these 3 tasks, many combinations of roles can be created to tailor to each Gnosis Safe needs.
@@ -49,7 +49,27 @@ By separating user roles through clear task assignments, users are allowed to cr
 
 <img width="1130" alt="Screen Shot 2565-03-07 at 23 50 33" src="https://user-images.githubusercontent.com/97900684/157079775-ac842f26-7b2d-4a89-82e8-5afa0f7ebf7a.png">
 
-## Policies
+In implementing these roles and assigned tasks, the initial M of N approval accouts should be signed.
 
---- to be continued
+## Transaction Policies
+
+By introducing User Roles and their assigned tasks to Gnosis Safe, Users are able to formulate their own transaction policies to govern their transaction process.
+
+Transaction policies are an important aspect in delegating tasks and order of execution to ensure good practice. With the key tasks in processing transactions defined above, user roles can be created to form transaction policies. With User Roles, groups of Users can be formed to perform certain tasks.
+
+###### Example:
+
+Imagine a DAO that executes transactions based on quorum or governance of the DAO's community. To efficiently execute these transactions, Users who manage the community may be given the Initiator role to start transaction processes. However, the approval of that transaction may be given to a different group of Users who perform final checks on the transaction before the transaction is broadcasted onto the blockchain. 
+
+This approval group may be a set of Users whose sole purpose is to approve transactions without access to initiate or execute the transaction. This reduces the risks of multi-sig owners going rogue and approval transactions for their own benefit without the approval of the enterprise, DAO, or community.
+
+Lastly, along side the proposed **Gas Management** mechanism, another User Role or Group can be created to solely manage the gas expenses for the community.
+
+In this example, the roles are pre-defined and follow a secure policy that allows the transactions from the Gnosis Safe to be predictable and organized.
+
+## Conlusion
+
+By defining the key actions and tasks required to process a transaction on Gnosis Safe, it is possible to delegate these tasks to specific Users or addresses to allow Users to create and govern their own enterprises in a way that is suitable for them and each User's appropriate responsibility. This added complexity onto the Gnosis Safe transaction process will allow for a more secure and confident experience for Users that require them, as well as given Users who need clear delegation of tasks the ability to do so on-chain.
+
+No doubt in the coming months and years, enterprises, businesses, and larger communities will require more than just a multi-sig, but also a secure and structured way to govern the signing process as well.
 
